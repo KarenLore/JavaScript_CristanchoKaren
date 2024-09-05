@@ -1,0 +1,151 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para el cuerpo */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor para la imagen */
+.img-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+/* Estilo para la imagen */
+img {
+    width: 200%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del nav */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #575757;
+    border-radius: 4px;
+}
+
+/* Estilos para el main */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los formularios */
+form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #333;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #575757;
+}
+
+/* Estilo para los resultados */
+#resultadoBusqueda, #resultadoNotas, #resultadoPromedio, 
+#resultadoAgregar, #resultadoAgregarNota, #resultadoCambiarGrupo {
+    background: #f0f0f5;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Media queries para adaptabilidad */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    .img-container {
+        padding: 0 10px;
+        /* Asegura que la imagen se ajuste en pantallas más pequeñas */
+    }
+
+    img {
+        max-width: 100%;
+        /* Asegura que la imagen no exceda el ancho del contenedor */
+    }
+}
